@@ -1,5 +1,19 @@
 == README
 
+<p>
+  <%= render 'shared/errors', object:  %>
+  <%= f.text_field :field %>
+</p>
+
+
+
+
+
+
+
+
+
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
