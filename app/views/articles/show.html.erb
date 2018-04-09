@@ -19,6 +19,17 @@
 <p>
 <strong>Comment:</strong>
 <%= comment.body %>
+
+<p>
+<%= link_to 'Delete Comment', [comment.article, comment],
+    method: :Delete,
+    data: {confirm: 'Are you Certain?'}%>
+
+</p>
+
+
+
+
 </p>
 <% end %>
 <hr>
