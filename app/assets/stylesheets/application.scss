@@ -20,6 +20,8 @@
  body {
    min-height: 75rem;
    padding-top: 4.5rem;
+   background: #d9eaf2;
+
  }
 
 
@@ -30,7 +32,8 @@
 
  thead
  {
-   background-color: #dddddd;
+   background-color: #30d8f0;
+   color: #111111;
  }
 
 
@@ -42,6 +45,11 @@
 
 .btn-light
 {
-  background-color: #3a89c9;
+  background-color: #d9eaf2;
   border: 3px solid #1b325f;
+}
+
+.jumbotron
+{
+  background-color: #ffffff;
 }
