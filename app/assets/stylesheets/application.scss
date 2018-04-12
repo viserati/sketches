@@ -15,15 +15,42 @@
  @import "bootstrap";
  @import "welcome";
  @import "navigation";
+ @import "footer";
 
 
  body {
-   min-height: 75rem;
+   min-height: 50rem;
    padding-top: 4.5rem;
    background: #d9eaf2;
-
+   overflow-x: hidden;
  }
 
+
+ .white
+ {
+   color: #ffffff;
+ }
+
+ .grey
+ {
+   color: #ddcccc;
+ }
+
+ .white
+ {
+   font-size: 11px;
+ }
+
+
+ .linktxt
+ {
+   color: #ddeeee;
+ }
+
+ .linktxt:hover
+ {
+   color: #ffffff;
+ }
 
 
  .container
