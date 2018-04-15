@@ -70,6 +70,31 @@
   border: 3px solid #1b325f;
 }
 
+
+.form-control2 select
+ {
+  display: block;
+  width: 100%;
+  padding: 0.375 0.75rem;
+  padding-left: 0.3rem;
+  line-height: 1.5;
+  color: #777777;
+  background-image: none;
+  background-clip: padding-box;
+  border-radius: 0.25rem;
+  background-color: #efeeef;
+  border: 3px solid #1b325f;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15;
+}
+
+
+.sm_style
+{
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+
+
 .btn-light
 {
   background-color: #d9eaf2;
@@ -79,4 +104,38 @@
 .jumbotron
 {
   background-color: #ffffff;
+}
+
+.show_notice
+{
+  margin:auto;
+  width:300px;
+  color:#009900;
+  font-size:18px;
+  padding:15px;
+  background-color:#ccddcc;
+  text-align:center;
+}
+
+.show_alert
+{
+  margin:auto;
+  width:300px;
+  color:#ff0000;
+  font-size:18px;
+  padding:15px;
+  background-color:#ddcccc;
+  text-align:center;
+}
+
+@media (max-width: 576px)
+{
+  .show_notice
+  {
+    width: 90%;
+  }
+  .show_alert
+  {
+    width:100%;
+  }
 }
