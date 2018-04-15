@@ -6,7 +6,7 @@ Rails.application.routes.draw do
     get :search #creates a new path for the searching
   end
   end
-
+  resources :subscribers
   root 'welcome#index'
 
 end

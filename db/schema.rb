@@ -28,6 +28,9 @@ ActiveRecord::Schema.define(version: 20180408132059) do
     t.datetime "updated_at", null: false
   end
 
-  add_index "comments", ["article_id"], name: "index_comments_on_article_id"
+# suscribers table
+
+
+add_index "comments", ["article_id"], name: "index_comments_on_article_id"
 
 end
