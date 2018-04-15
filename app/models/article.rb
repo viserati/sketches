@@ -5,4 +5,9 @@ class Article < ActiveRecord::Base
   validates :text, presence: true,
             length: {minimum: 5}
 
+def self.search(params)
+  articles = Article.where("text LIKE ? or title LIKE ?", "%#{params[:search]}%",
+            "%#{params[:search]}%") if params[:search].present?
+  articles # returns the articles containing the search words
+end
 end
