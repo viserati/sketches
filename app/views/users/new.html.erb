@@ -29,14 +29,14 @@
 </div>
 <% end %><!-- end of checking for errors -->
 
-<%= f.text_field :userid, placeholder: 'Input a User ID', class: 'form-control' %>
-<%= f.email_field :email, placeholder: 'Input your email', class: 'form-control' %>
-<%= f.password_field :password, placeholder: 'Create a password', class: 'form-control' %>
-<%= f.password_field :password_confirmation, placeholder: 'Confirm password', class: 'form-control' %>
+<%= f.text_field :userid, placeholder: 'Input a User ID', class: 'form-control' %><br>
+<%= f.email_field :email, placeholder: 'Input your email', class: 'form-control' %><br>
+<%= f.password_field :password, placeholder: 'Create a password', class: 'form-control' %><br>
+<%= f.password_field :password_confirmation, placeholder: 'Confirm password', class: 'form-control' %><br>
 <%= f.submit 'Create Account' %>
 <% end %>
 </div>
-
+<br>
 <p>
   <%= link_to 'Articles', articles_path, class: 'btn btn-md btn-info' %>
   <%= link_to 'Home', welcome_index_path, class:'btn btn-md btn-primary' %>
