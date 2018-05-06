@@ -25,6 +25,13 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap', '~> 4.0'
 gem 'sprockets-rails', '~> 3.2', '>= 3.2.1'
 
+# For File Upload
+gem 'paperclip', '~> 6.0'
+gem 'aws-sdk-s3', '~> 1.9', '>= 1.9.1'
+gem 'paperclip-av-transcoder', '~> 0.6.4'
+
+
+
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
