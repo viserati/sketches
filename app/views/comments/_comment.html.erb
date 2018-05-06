@@ -15,7 +15,11 @@
 
 <p>
 <strong>Comment:</strong>
-<%= comment.body %>
+<%= truncate(comment.body, length: 300) %>
+</p>
+
+<% if current_user && current_user.admin?  %>
+
 
 <p>
 <%= link_to 'Delete Comment', [comment.article, comment],
@@ -24,7 +28,7 @@
     data: {confirm: 'Are you Certain?'} %>
 
 </p>
-
+<% end %>
 
 
 

@@ -7,14 +7,21 @@
 
 <table class="table table-hover table-responsive-xs">
 
+<thead>
   <tr>
-    <thead>
+
     <th>Title</th>
     <th>Text</th>
-    <th colspan = "3">Editing Options</th>
-    </thead>
-  </tr>
+    <th>Title</th>
+    <th>Text</th>
+    <% if current_user && current_user.admin?  %>
+      <th colspan = "3">Editing Options</th>
+    <% else %>
+      <th colspan = "1">Show Article</th>
+    <% end %>
 
+  </tr>
+</thead>
 
 
 <tbody>
@@ -29,6 +36,7 @@
     <td>
       <%= link_to 'Show', article_path(article), class: 'btn btn-sm btn-info' %>
     </td>
+    <% if current_user && current_user.admin?  %>
     <td>
       <%= link_to 'Edit', edit_article_path(article), class: 'btn btn-sm btn-warning'%>
     </td>
@@ -37,6 +45,7 @@
           method: :Delete,
           data: {confirm: 'Are you sure  you want to DELETE this article?'}%>
     </td>
+    <% end %>
   </tr>
   <% end %>
 </tbody>

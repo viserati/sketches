@@ -12,6 +12,13 @@ class ApplicationController < ActionController::Base
   helper_method :current_user
 
   def authorize
-    redirect_to new_session_path, alert: 'Please Sign In or Sign Up!' if current_user.nil?
+    redirect_to new_session_path,
+    alert: 'Please Sign In or Sign Up!' if current_user.nil?
   end
+
+  def admin_authorize
+    redirect_to new_session_path,
+    alert: 'Administrator use only !!!' unless current_user.admin
+  end
+
 end
