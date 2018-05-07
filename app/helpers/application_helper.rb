@@ -10,4 +10,33 @@ module ApplicationHelper
       return link_to nav_link, url, class:style
     end
   end
+
+  def your_country
+    countries = [   " ",
+                    "Afghanistan",
+                    "Albania",
+                    "Algeria",
+                    "Andorra",
+                    "Angola",
+                    "Antigua and Barbuda",
+                    "Argentina",
+                    "Armenia",
+                    "Aruba",
+                    "Australia",
+                    "Austria",
+                    "Azerbaijan", 
+                    " "]
+  countries.each do |country|
+    my_country = "#{country}"
+
+
+  end
+
+    # my_country = options_for_select(['Country1', 'Country2', 'Country3', 'Country4'])
+    return countries
+  end
+
+
+
+
 end
