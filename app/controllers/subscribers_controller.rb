@@ -2,7 +2,8 @@ class SubscribersController < ApplicationController
   # http_basic_authenticate_with name: "xavier", password: "password",
   # except: [:create]
 
-  before_action :admin_authorize, :except => [:index, :show, :search]
+  before_action :authorize, :except => [:create]
+  before_action :admin_authorize, :only => [:index, :destroy]
 
   def index
     @subscribers = Subscriber.all
@@ -10,7 +11,7 @@ class SubscribersController < ApplicationController
 
   def create
     @subscriber = Subscriber.new(subscriber_params)
-    # check if subscriber exists in database table.
+    # check to see if subscriber exists in database table.
     if Subscriber.exists?(email: @subscriber.email)
       redirect_to root_path, alert: "Sorry that email already exists."
     elsif

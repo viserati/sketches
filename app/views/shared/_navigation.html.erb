@@ -12,9 +12,11 @@
       <li class="nav-item">
         <%= active_link_to 'Blog', 'articles', 'index', articles_path, "active_nav-link" %>
       </li>
+
       <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
+        <%= active_link_to 'About', 'about', 'index', about_index_path, "active_nav-link" %>
       </li>
+
       <li class="nav-item">
         <%= link_to 'Create Account', new_user_path, class: "active_nav-link" %>
       </li>
@@ -40,7 +42,7 @@
         <li class="nav-item">
         <%= link_to 'Sign In', new_session_path, class: "active_nav-link" %>
       </li>
-            
+
       <% end %>
       </li>
     </ul>
